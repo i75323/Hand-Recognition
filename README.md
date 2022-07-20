@@ -13,7 +13,7 @@ This research mainly uses [MediaPipe](https://google.github.io/mediapipe/),an op
   Instructions for setting up the environment :
   
   ```P
-  conda env create -n your name -f hand0707.yaml
+  conda env create -n yourname -f hand0707.yaml
   ```
 
   Conda environment erection reference URL : 
