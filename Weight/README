@@ -1,18 +1,5 @@
+# 0306
 
-『 py檔案介紹 』
-主要環境執行於darknet環境下喔～～～～～～～
-需要的相依套件都在yaml裡面
-是利用conda所匯出來的
-可以直接利用這個yaml檔來直接建一個新的虛擬環境
----------------------------------------------
-建造虛擬環境操作網址
-https://medium.com/python4u/%E7%94%A8conda%E5%BB%BA%E7%AB%8B%E5%8F%8A%E7%AE%A1%E7%90%86python%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-b61fd2a76566
-https://ithelp.ithome.com.tw/articles/10218768
-主要建造指令:
+# 0507
 
-★ conda env create -n 自己取名字 -f hand0707.yaml
-
----------------------------------------------
-
-
-
+# 0514
