@@ -4,7 +4,7 @@ This research mainly uses [MediaPipe](https://google.github.io/mediapipe/),an op
 
 [![IMAGE ALT TEXT ](https://user-images.githubusercontent.com/69238937/179921614-b69f042d-1e04-463d-b551-3a60a7da43c6.png)](https://youtu.be/J3_uRAxIRy4 "Hand Gesture Recognition System" )
 
-# Installation
+## Installation
 
   The main environment is executed in the darknet environment, and the required dependencies are described in yaml, which is exported by conda, so you can directly use the Setup/hand0707.yaml file to directly create a new virtual environment
 
@@ -41,7 +41,7 @@ This research mainly uses [MediaPipe](https://google.github.io/mediapipe/),an op
   
   * <https://github.com/AlexeyAB/darknet>
 
-# Weight
+## Weight
 
   In the weight folder, the weights trained by darknet19 are placed, which will need to be used for identification. Three different samples and the weights trained are used, including self-collected samples, Massey University samples, and Surrey, UK. University sample .
        
@@ -51,10 +51,10 @@ This research mainly uses [MediaPipe](https://google.github.io/mediapipe/),an op
   
   * 0517 Folder ([梅西大學手勢樣本](https://www.massey.ac.nz/~albarcza/gesture_dataset2012.html))
 
-# Data
+## Data
 
 
-# Demo
+## Demo
 
 * darknet_images_backup.py
 
