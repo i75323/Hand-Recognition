@@ -1,6 +1,6 @@
 # Hand Gesture Recognition System
 
-  This research mainly uses [MediaPipe](https://google.github.io/mediapipe/),an open source project developed by Google, to design the overall system. The palm skeleton detected by MediaPipe uses a deep learning architecture to recognize gestures. It mainly uses the classification and recognition architecture of the deep learning architecture Darknet19 to process the real-time detected images, and uses the Socket communication protocol to stream the recognition results to the web page of the Flask framework, so that the user can immediately get the gesture judgment. At the same time, it can control the robot to perform specific tasks, and finally the information is sent back to the user to achieve interactive communication. Can see the detection window and the robot window in the picture.
+This research mainly uses [MediaPipe](https://google.github.io/mediapipe/),an open source project developed by Google, to design the overall system. The palm skeleton detected by MediaPipe uses a deep learning architecture to recognize gestures. It mainly uses the classification and recognition architecture of the deep learning architecture Darknet19 to process the real-time detected images, and uses the Socket communication protocol to stream the recognition results to the web page of the Flask framework, so that the user can immediately get the gesture judgment. At the same time, it can control the robot to perform specific tasks, and finally the information is sent back to the user to achieve interactive communication. Can see the detection window and the robot window in the picture.
 
 ![image](https://user-images.githubusercontent.com/69238937/179921614-b69f042d-1e04-463d-b551-3a60a7da43c6.png)
 
@@ -22,7 +22,7 @@
 
 * Darknet environment
 
-  The darknet environment is set up according to AlexeyAB's set-up steps , The part of needism is that the following settings need to be turned on and set to 1 during construction , Mainly in the setting parameter of **LIBSO = 0** in the darknet Makefile, if it is not turned on, it will not be able to execute the subsequent programs smoothly
+The darknet environment is set up according to AlexeyAB's set-up steps , The part of needism is that the following settings need to be turned on and set to 1 during construction , Mainly in the setting parameter of **LIBSO = 0** in the darknet Makefile, if it is not turned on, it will not be able to execute the subsequent programs smoothly
 ```P
 # Mainly for the programs in the Makefile
 GPU=1
