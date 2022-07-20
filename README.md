@@ -46,24 +46,33 @@ ZED_CAMERA_v2_8=0
 
 * darknet_images_backup.py
 
+  ```P
+  python darknet_images_backup.py
+  ```
+
+  It is mainly used to perform detection and identification of reading a single image.
 
 https://user-images.githubusercontent.com/69238937/179927707-0eee3549-7c9b-4799-a276-46ea3ef782d3.mp4
 
-
 * darknet_viedo.py
 
+  ```P
+  python darknet_viedo.py
+  ```
 
+  Can perform gesture detection, gesture recognition, spelling, and most importantly, the distance between the fingers
 
 https://user-images.githubusercontent.com/69238937/179927773-9fe97f19-f843-4349-9550-1759c3afd865.mp4
 
-
-
 * darknet_viedo_canrun_backup.py
 
+  ```P
+  python darknet_video_canrun_backup.py
+  ```
 
+  Can simply perform gesture detection and gesture recognition
 
 https://user-images.githubusercontent.com/69238937/179927824-5a264eb9-39b0-4d62-a863-1a2267317c6b.mp4
-
 
 * darknet_viedo_flask.py
 
