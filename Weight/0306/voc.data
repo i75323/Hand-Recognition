@@ -1,0 +1,7 @@
+classes= 24
+train  = /home/i75323/darknet/0306/train.list
+valid  = /home/i75323/darknet/0306/test.list 
+labels = /home/i75323/darknet/0306/labels.list 
+backup = /home/i75323/darknet/0306/backup 
+
+top=5
