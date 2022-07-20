@@ -76,7 +76,15 @@ https://user-images.githubusercontent.com/69238937/179927824-5a264eb9-39b0-4d62-
 
 * darknet_viedo_flask.py
 
+  ```P
+  # Open two terminals, Execute two commands separately
+  1. python robo.py
+  2. python darknet_video_canrun_backup.py
+  ```
+  
+  Perform gesture detection, gesture recognition, spelling correction, and sending commands to the robot (displayed on the web page)
 
+https://user-images.githubusercontent.com/69238937/179931888-6d25d5ed-9d4f-4f8f-8b08-2f626b43d375.mp4
 
 # Tutorials and API
 
