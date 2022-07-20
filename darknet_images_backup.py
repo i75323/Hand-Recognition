@@ -8,7 +8,7 @@ import cv2
 import numpy as np
 import darknet
 
-from cvzone.HandTrackingModule import HandDetector
+from HandTrackingModule import HandDetector
 
 
 def parser():
