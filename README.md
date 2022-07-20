@@ -42,7 +42,7 @@ ZED_CAMERA_v2_8=0
 
 # Weight
 
-  The weight is trained by darknet19. There are three versions, including self-collected samples, Massey University samples, and Surrey University samples.
+  In the weight folder, the weights trained by darknet19 are placed, which will need to be used for identification. Three different samples and the weights trained are used, including self-collected samples, Massey University samples, and Surrey, UK. University sample .
        
   * 0306資料夾 (英國薩里大學 ASL美國手語) <https://www.kaggle.com/datasets/mrgeislinger/asl-rgb-depth-fingerspelling-spelling-it-out>
 
