@@ -4,6 +4,8 @@ This research mainly uses [MediaPipe](https://google.github.io/mediapipe/),an op
 
 <img src="https://user-images.githubusercontent.com/69238937/179921614-b69f042d-1e04-463d-b551-3a60a7da43c6.png" width="660" /><br/>
 
+[![IMAGE ALT TEXT](https://user-images.githubusercontent.com/69238937/179921614-b69f042d-1e04-463d-b551-3a60a7da43c6.png)](https://youtu.be/J3_uRAxIRy4 "Hand Gesture Recognition System")
+
 # Installation
 
   The main environment is executed in the darknet environment, and the required dependencies are described in yaml, which is exported by conda, so you can directly use the Setup/hand0707.yaml file to directly create a new virtual environment
