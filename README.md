@@ -39,10 +39,11 @@ ZED_CAMERA_v2_8=0
   AlexeyAB Reference URL :
   
   * <https://github.com/AlexeyAB/darknet>
-  
-  
 
-# Program display
+# Tutorials and API
+
+
+# Demo
 
 * darknet_images_backup.py
 
@@ -86,7 +87,4 @@ https://user-images.githubusercontent.com/69238937/179927824-5a264eb9-39b0-4d62-
 
 https://user-images.githubusercontent.com/69238937/179931888-6d25d5ed-9d4f-4f8f-8b08-2f626b43d375.mp4
 
-# Tutorials and API
-
-# Demo
 
