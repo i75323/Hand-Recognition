@@ -8,7 +8,11 @@ The main environment is executed in the darknet environment, and the required de
 
 * MediaPipe environment
 
-  Instructions for setting up the environment : `conda env create -n your name -f hand0707.yaml`
+  Instructions for setting up the environment :
+  
+  ```P
+  conda env create -n your name -f hand0707.yaml
+  ```
 
   Conda environment erection reference URL : 
   * (https://medium.com/python4u/%E7%94%A8conda%E5%BB%BA%E7%AB%8B%E5%8F%8A%E7%AE%A1%E7%90%86python%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-b61fd2a76566)
