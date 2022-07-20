@@ -63,7 +63,7 @@ ZED_CAMERA_v2_8=0
 
   It is mainly used to perform detection and identification of reading a single image.
 
-https://user-images.githubusercontent.com/69238937/179927707-0eee3549-7c9b-4799-a276-46ea3ef782d3.mp4
+https://user-images.githubusercontent.com/69238937/179927707-0eee3549-7c9b-4799-a276-46ea3ef782d3.mp4 
 
 * darknet_viedo.py
 
