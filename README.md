@@ -45,11 +45,11 @@ This research mainly uses [MediaPipe](https://google.github.io/mediapipe/),an op
 
   In the weight folder, the weights trained by darknet19 are placed, which will need to be used for identification. Three different samples and the weights trained are used, including self-collected samples, Massey University samples, and Surrey, UK. University sample .
        
-  * 0306資料夾 ([英國薩里大學-ASL美國手語](https://www.kaggle.com/datasets/mrgeislinger/asl-rgb-depth-fingerspelling-spelling-it-out))
+  * 0306 Folder ([英國薩里大學-ASL美國手語](https://www.kaggle.com/datasets/mrgeislinger/asl-rgb-depth-fingerspelling-spelling-it-out))
 
-  * 0507資料夾 (自行收集樣本)
+  * 0507 Folder (自行收集樣本)
   
-  * 0517資料夾 ([梅西大學手勢樣本](https://www.massey.ac.nz/~albarcza/gesture_dataset2012.html))
+  * 0517 Folder ([梅西大學手勢樣本](https://www.massey.ac.nz/~albarcza/gesture_dataset2012.html))
 
 # Data
 
