@@ -9,7 +9,7 @@ from threading import Thread
 from queue import Queue
 import math
 
-from cvzone.HandTrackingModule import HandDetector
+from HandTrackingModule import HandDetector
 import cvzone
 import numpy as np
 
