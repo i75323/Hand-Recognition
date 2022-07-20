@@ -4,7 +4,7 @@ This research mainly uses [MediaPipe](https://google.github.io/mediapipe/),an op
 
 <img src="https://user-images.githubusercontent.com/69238937/179921614-b69f042d-1e04-463d-b551-3a60a7da43c6.png" width="660" /><br/>
 
-[![IMAGE ALT TEXT](https://user-images.githubusercontent.com/69238937/179921614-b69f042d-1e04-463d-b551-3a60a7da43c6.png)](https://youtu.be/J3_uRAxIRy4 "Hand Gesture Recognition System")
+[![IMAGE ALT TEXT ](https://user-images.githubusercontent.com/69238937/179921614-b69f042d-1e04-463d-b551-3a60a7da43c6.png)](https://youtu.be/J3_uRAxIRy4 "Hand Gesture Recognition System" )
 
 # Installation
 
