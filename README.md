@@ -40,7 +40,9 @@ ZED_CAMERA_v2_8=0
   
   * <https://github.com/AlexeyAB/darknet>
 
-# Tutorials and API
+# Weight
+
+# Data
 
 
 # Demo
