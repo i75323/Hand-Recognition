@@ -42,6 +42,14 @@ ZED_CAMERA_v2_8=0
 
 # Weight
 
+  The weight is trained by darknet19. There are three versions, including self-collected samples, Massey University samples, and Surrey University samples.
+       
+  * 0306資料夾 (英國薩里大學 ASL美國手語) <https://www.kaggle.com/datasets/mrgeislinger/asl-rgb-depth-fingerspelling-spelling-it-out>
+
+  * 0507資料夾 (自行收集樣本)
+  
+  * 0517資料夾 (梅西大學手勢樣本) <https://www.massey.ac.nz/~albarcza/gesture_dataset2012.html>
+
 # Data
 
 
