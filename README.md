@@ -6,7 +6,7 @@ This research mainly uses [MediaPipe](https://google.github.io/mediapipe/),an op
 
 # Installation
 
-The main environment is executed in the darknet environment, and the required dependencies are described in yaml, which is exported by conda, so you can directly use the hand0707.yaml file to directly create a new virtual environment
+The main environment is executed in the darknet environment, and the required dependencies are described in yaml, which is exported by conda, so you can directly use the Setup/hand0707.yaml file to directly create a new virtual environment
 
 * MediaPipe environment
 
