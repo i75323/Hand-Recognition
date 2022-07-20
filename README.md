@@ -15,6 +15,13 @@ This research mainly uses [MediaPipe](https://google.github.io/mediapipe/),an op
   ```P
   conda env create -n yourname -f hand0707.yaml
   ```
+  
+  HandTrackingModule.py -> This file needs to be placed under the same folder as the executive party, because this program will be referenced when the main program is executed
+  
+  ```P
+  #In the gesture detection recognition program
+  from HandTrackingModule import HandDetector
+  ```
 
   Conda environment erection reference URL : 
   * <https://medium.com/python4u/%E7%94%A8conda%E5%BB%BA%E7%AB%8B%E5%8F%8A%E7%AE%A1%E7%90%86python%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-b61fd2a76566>
