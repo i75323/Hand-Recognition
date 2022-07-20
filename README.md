@@ -2,8 +2,6 @@
 
 This research mainly uses [MediaPipe](https://google.github.io/mediapipe/),an open source project developed by Google, to design the overall system. The palm skeleton detected by MediaPipe uses a deep learning architecture to recognize gestures. It mainly uses the classification and recognition architecture of the deep learning architecture Darknet19 to process the real-time detected images, and uses the Socket communication protocol to stream the recognition results to the web page of the Flask framework, so that the user can immediately get the gesture judgment. At the same time, it can control the robot to perform specific tasks, and finally the information is sent back to the user to achieve interactive communication. Can see the detection window and the robot window in the picture.
 
-<img src="https://user-images.githubusercontent.com/69238937/179921614-b69f042d-1e04-463d-b551-3a60a7da43c6.png" width="660" /><br/>
-
 [![IMAGE ALT TEXT ](https://user-images.githubusercontent.com/69238937/179921614-b69f042d-1e04-463d-b551-3a60a7da43c6.png)](https://youtu.be/J3_uRAxIRy4 "Hand Gesture Recognition System" )
 
 # Installation
