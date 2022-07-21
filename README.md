@@ -62,8 +62,17 @@ This research mainly uses [MediaPipe](https://google.github.io/mediapipe/),an op
 
   The samples are mainly English gestures A~Z with a total of 24 letters (excluding J and Z). This system uses a single screen for identification, so it is impossible to classify and identify dynamic gestures.The main samples used are located in the hand_data folder.
   
-  <img src="https://user-images.githubusercontent.com/69238937/180123269-98319d3d-a0cf-412d-823d-1c6eaa8a6748.jpg" width="500" /><br/>
+  * Ministry of Education announces English gestures
+  
+    <img src="https://user-images.githubusercontent.com/69238937/180123269-98319d3d-a0cf-412d-823d-1c6eaa8a6748.jpg" width="500" /><br/>
+    
+  * Homemade Gesture Skeleton Sample , These samples are placed in the hand_data folder
+  
+    <img src="https://user-images.githubusercontent.com/69238937/180156719-1eebfc37-b85d-4420-942e-6bfa263bfea3.png" width="500" /><br/>
+  
 
+  
+   	 
 ## Make Gesture Data
 
   If you want to collect and make gesture samples by yourself, use the create_image_opencarmera.py program in do_dataset Folder, you can perform Mediapipe detection on the read images, and then convert them into skeleton samples with a simple black background.
