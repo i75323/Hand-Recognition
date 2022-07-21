@@ -153,9 +153,21 @@ https://user-images.githubusercontent.com/69238937/179927824-5a264eb9-39b0-4d62-
   
   Execute instruction : `python robo.py` and `python darknet_video_canrun_backup.py`
  
-  * Perform gesture detection, gesture recognition, spelling correction, and sending commands to the robot (displayed on the web page)
+  * Perform gesture detection, gesture recognition, spelling correction, and sending commands to the robot (displayed on the web page) , When using the darknet_video_flask program, you need to pull the templates folder to the same directory, because the template folder is where the web and html are stored. If the program is not executed, it will not be read and will not be moved. There are two html that are login and result.
   * The main modifications are as follows :
   ```P
+  ★ def parser(): in --weights, --config_file, --data_file
+    You need to modify it yourself according to the classification structure, training weight, etc. you use, because you need to identify the classification structure, which must be changed; the current experiment basically uses the weight of the 0507 folder.
+  ★ cap = cv2.VideoCapture(input_path)
+    The input_path may need to be modified, because the different experimental hardware may cause the problem that the lens may not be read (although there is basically no error~~).
+  ★ detector = HandDetector(detectionCon=0.8, maxHands=2)
+    The main part is to set the threshold value, detectionCon is the confidence of detecting the shot, and maxHands is how many hands can be detected. In this program, maxHands must be set to 2, because the left and right hands will be used at the same time.
+  ★ for button in buttonList :
+    This is the threshold setting for function selection. The setting will only be selected within a fixed range. If you want to modify the selection position, you can modify it here.
+  ★ client_socket.connect(('192.168.186.81', 8485))
+    The IP location needs to be modified according to the current URL during the experiment. Usually, it is modified to the IP of the WIFI sent by the robot. If you don't want to control the robot but just want to test the overall system, you can set it to ('0.0.0.0', 8485) and you can do it Use, if the IP is not modified, it will not be able to execute.
+  ★ app.run(host="0.0.0.0", port=5000)
+    This is the IP setting of the flask web page, it can be used with basic (0.0.0.0)
   
   ```
 https://user-images.githubusercontent.com/69238937/179931888-6d25d5ed-9d4f-4f8f-8b08-2f626b43d375.mp4
