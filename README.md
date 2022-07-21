@@ -60,7 +60,7 @@ This research mainly uses [MediaPipe](https://google.github.io/mediapipe/),an op
 
 ## Data
 
-  The samples are mainly English gestures A~Z with a total of 24 letters (excluding J and Z). This system uses a single screen for identification, so it is impossible to classify and identify dynamic gestures.
+  The samples are mainly English gestures A~Z with a total of 24 letters (excluding J and Z). This system uses a single screen for identification, so it is impossible to classify and identify dynamic gestures.The main samples used are located in the hand_data folder.
   
   ![英文字母手勢](https://user-images.githubusercontent.com/69238937/180123269-98319d3d-a0cf-412d-823d-1c6eaa8a6748.jpg)
 
