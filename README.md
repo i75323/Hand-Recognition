@@ -97,45 +97,67 @@ This research mainly uses [MediaPipe](https://google.github.io/mediapipe/),an op
 ## Demo
 
 * darknet_images_backup.py
-
+  
+  Execute instruction : `python darknet_images_backup.py`
+  
+  * It is mainly used to perform detection and identification of reading a single image.
+  * The main modifications are as follows :
   ```P
-  python darknet_images_backup.py
+  ★ detector = HandDetector(detectionCon=0.5, maxHands=1)
+    The main part is to set the threshold, detectionCon is the confidence of detecting shots, and maxHands is how many hands can be detected.
+  ★ img = cv2.imread('/home/i75323/darknet/2022-05-19-231845.jpg')
+    The main thing is to read the location of the picture, you need to modify it according to your own picture path, and then the path and picture name cannot have   Chinese, and there are Chinese export bugs.
+  ★ def parser(): in --weights, --config_file, --data_file
+    You need to modify it yourself according to the classification structure, training weight, etc. you use, because you need to identify the classification structure,   which must be changed; the current experiment basically uses the weight of the 0507 folder.
   ```
-
-  It is mainly used to perform detection and identification of reading a single image.
 
 https://user-images.githubusercontent.com/69238937/179927707-0eee3549-7c9b-4799-a276-46ea3ef782d3.mp4 
 
 * darknet_viedo.py
+  
+  Execute instruction : `python darknet_viedo.py`
 
+  * Can perform gesture detection, gesture recognition, spelling, and most importantly, the distance between the fingers
+  * The main modifications are as follows :
   ```P
-  python darknet_viedo.py
+  ★ def parser(): in --weights, --config_file, --data_file
+    You need to modify it yourself according to the classification structure, training weight, etc. you use, because you need to identify the classification structure, which must be changed; the current experiment basically uses the weight of the 0507 folder.
+  ★ cap = cv2.VideoCapture(input_path)
+    The input_path may need to be modified, because the different experimental hardware may cause the problem that the lens may not be read (although there is basically no error~~).
+  ★ detector = HandDetector(detectionCon=0.8, maxHands=2)
+    The main part is to set the threshold value, detectionCon is the confidence of detecting shots, and maxHands is how many hands can be detected. In this program, maxHands must be set to 2, because the left and right hands will be used at the same time.
+  ★ for button in buttonList :
+    This is the threshold setting for function selection. The setting will only be selected within a fixed range. If you want to modify the selection position, you can modify it here.
   ```
-
-  Can perform gesture detection, gesture recognition, spelling, and most importantly, the distance between the fingers
 
 https://user-images.githubusercontent.com/69238937/179927773-9fe97f19-f843-4349-9550-1759c3afd865.mp4
 
 * darknet_viedo_canrun_backup.py
+  
+  Execute instruction : `python darknet_video_canrun_backup.py`
 
+  * Can simply perform gesture detection and gesture recognition
+  * The main modifications are as follows : 
   ```P
-  python darknet_video_canrun_backup.py
+  ★ def parser(): in --weights, --config_file, --data_file
+    You need to modify it yourself according to the classification structure, training weight, etc. you use, because you need to identify the classification structure, which must be changed; the current experiment basically uses the weight of the 0507 folder.
+  ★ cap = cv2.VideoCapture(input_path)
+    The input_path may need to be modified, because the different experimental hardware may cause the problem that the lens may not be read (although there is basically no error~~).
+  ★ detector = HandDetector(detectionCon=0.8, maxHands=1)
+    The main part is to set the threshold, detectionCon is the confidence of detecting shots, and maxHands is how many hands can be detected.
   ```
-
-  Can simply perform gesture detection and gesture recognition
 
 https://user-images.githubusercontent.com/69238937/179927824-5a264eb9-39b0-4d62-a863-1a2267317c6b.mp4
 
 * darknet_viedo_flask.py
-
-  ```P
-  # Open two terminals, Execute two commands separately
-  1. python robo.py
-  2. python darknet_video_canrun_backup.py
-  ```
   
-  Perform gesture detection, gesture recognition, spelling correction, and sending commands to the robot (displayed on the web page)
-
+  Execute instruction : `python robo.py` and `python darknet_video_canrun_backup.py`
+ 
+  * Perform gesture detection, gesture recognition, spelling correction, and sending commands to the robot (displayed on the web page)
+  * The main modifications are as follows :
+  ```P
+  
+  ```
 https://user-images.githubusercontent.com/69238937/179931888-6d25d5ed-9d4f-4f8f-8b08-2f626b43d375.mp4
 
 
