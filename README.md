@@ -54,7 +54,7 @@ This research mainly uses [MediaPipe](https://google.github.io/mediapipe/),an op
        
   * 0306 Folder ([英國薩里大學-ASL美國手語](https://www.kaggle.com/datasets/mrgeislinger/asl-rgb-depth-fingerspelling-spelling-it-out))
 
-  * 0507 Folder (自行收集樣本)
+  * 0507 Folder ([自行收集樣本](https://github.com/i75323/Hand-Recognition/tree/main/hand_data))
   
   * 0517 Folder ([梅西大學手勢樣本](https://www.massey.ac.nz/~albarcza/gesture_dataset2012.html))
 
