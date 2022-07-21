@@ -66,10 +66,23 @@ This research mainly uses [MediaPipe](https://google.github.io/mediapipe/),an op
 
 ## Make gesture data
 
-  If you want to collect and make gesture samples by yourself, use the create_image_opencarmera.py program in do_dataset, you can perform Mediapipe detection on the read images, and then convert them into skeleton samples with a simple black background.
+  If you want to collect and make gesture samples by yourself, use the create_image_opencarmera.py program in do_dataset Folder, you can perform Mediapipe detection on the read images, and then convert them into skeleton samples with a simple black background.
 
-  
   <img src="https://user-images.githubusercontent.com/69238937/180124835-0c8ae854-7401-4d6d-8aa3-92844f6a3192.png" width="500" /><br/>
+  
+  You can easily generate skeleton samples by modifying the location where the data is read below and where it is stored. Remember that the path must not use Chinese paths, and the program cannot be executed.There will be a total of three places in the file that need to be modified in create_image_opencarmera.py program.
+  
+  ```P
+  # Programs in the create_image_opencarmera.py file
+  
+  * for filename in os.listdir("your-storage-location")
+    
+  * img = cv2.imread("your-storage-location" +'/' + filename )
+    
+  * cv2.imwrite("your-storage-location"+"/"+str(filename)+'.jpg',img2)
+  ```
+  
+  
 
 
 ## Demo
