@@ -84,11 +84,11 @@ This research mainly uses [MediaPipe](https://google.github.io/mediapipe/),an op
   ```P
   # Programs in the create_image_opencarmera.py file
   
-  * for filename in os.listdir("your-storage-location")
+  ★ for filename in os.listdir("your-storage-location")
     
-  * img = cv2.imread("your-storage-location" +'/' + filename )
+  ★ img = cv2.imread("your-storage-location" +'/' + filename )
     
-  * cv2.imwrite("your-storage-location"+"/"+str(filename)+'.jpg',img2)
+  ★ cv2.imwrite("your-storage-location"+"/"+str(filename)+'.jpg',img2)
   ```
   
   
@@ -104,11 +104,11 @@ This research mainly uses [MediaPipe](https://google.github.io/mediapipe/),an op
   * The main modifications are as follows :
     ```P
     ★ detector = HandDetector(detectionCon=0.5, maxHands=1)
-    The main part is to set the threshold, detectionCon is the confidence of detecting shots, and maxHands is how many hands can be detected.
+    # The main part is to set the threshold, detectionCon is the confidence of detecting shots, and maxHands is how many hands can be detected.
     ★ img = cv2.imread('/home/i75323/darknet/2022-05-19-231845.jpg')
-    The main thing is to read the location of the picture, you need to modify it according to your own picture path, and then the path and picture name cannot have   Chinese, and there are Chinese export bugs.
+    # The main thing is to read the location of the picture, you need to modify it according to your own picture path, and then the path and picture name cannot have   Chinese, and there are Chinese export bugs.
     ★ def parser(): in --weights, --config_file, --data_file
-    You need to modify it yourself according to the classification structure, training weight, etc. you use, because you need to identify the classification structure,   which must be changed; the current experiment basically uses the weight of the 0507 folder.
+    # You need to modify it yourself according to the classification structure, training weight, etc. you use, because you need to identify the classification structure,   which must be changed; the current experiment basically uses the weight of the 0507 folder.
     ```
 
 https://user-images.githubusercontent.com/69238937/179927707-0eee3549-7c9b-4799-a276-46ea3ef782d3.mp4 
@@ -121,13 +121,13 @@ https://user-images.githubusercontent.com/69238937/179927707-0eee3549-7c9b-4799-
   * The main modifications are as follows :
     ```P
     ★ def parser(): in --weights, --config_file, --data_file
-    You need to modify it yourself according to the classification structure, training weight, etc. you use, because you need to identify the classification structure, which must be changed; the current experiment basically uses the weight of the 0507 folder.
+    # You need to modify it yourself according to the classification structure, training weight, etc. you use, because you need to identify the classification structure, which must be changed; the current experiment basically uses the weight of the 0507 folder.
     ★ cap = cv2.VideoCapture(input_path)
-    The input_path may need to be modified, because the different experimental hardware may cause the problem that the lens may not be read (although there is basically no error~~).
+    # The input_path may need to be modified, because the different experimental hardware may cause the problem that the lens may not be read (although there is basically no error~~).
     ★ detector = HandDetector(detectionCon=0.8, maxHands=2)
-    The main part is to set the threshold value, detectionCon is the confidence of detecting shots, and maxHands is how many hands can be detected. In this program, maxHands must be set to 2, because the left and right hands will be used at the same time.
+    # The main part is to set the threshold value, detectionCon is the confidence of detecting shots, and maxHands is how many hands can be detected. In this program, maxHands must be set to 2, because the left and right hands will be used at the same time.
     ★ for button in buttonList :
-    This is the threshold setting for function selection. The setting will only be selected within a fixed range. If you want to modify the selection position, you can modify it here.
+    # This is the threshold setting for function selection. The setting will only be selected within a fixed range. If you want to modify the selection position, you can modify it here.
     ```
 
 https://user-images.githubusercontent.com/69238937/179927773-9fe97f19-f843-4349-9550-1759c3afd865.mp4
@@ -140,11 +140,11 @@ https://user-images.githubusercontent.com/69238937/179927773-9fe97f19-f843-4349-
   * The main modifications are as follows : 
     ```P
     ★ def parser(): in --weights, --config_file, --data_file
-    You need to modify it yourself according to the classification structure, training weight, etc. you use, because you need to identify the classification structure, which must be changed; the current experiment basically uses the weight of the 0507 folder.
+    # You need to modify it yourself according to the classification structure, training weight, etc. you use, because you need to identify the classification structure, which must be changed; the current experiment basically uses the weight of the 0507 folder.
     ★ cap = cv2.VideoCapture(input_path)
-    The input_path may need to be modified, because the different experimental hardware may cause the problem that the lens may not be read (although there is basically no error~~).
+    # The input_path may need to be modified, because the different experimental hardware may cause the problem that the lens may not be read (although there is basically no error~~).
     ★ detector = HandDetector(detectionCon=0.8, maxHands=1)
-    The main part is to set the threshold, detectionCon is the confidence of detecting shots, and maxHands is how many hands can be detected.
+    # The main part is to set the threshold, detectionCon is the confidence of detecting shots, and maxHands is how many hands can be detected.
     ```
 
 https://user-images.githubusercontent.com/69238937/179927824-5a264eb9-39b0-4d62-a863-1a2267317c6b.mp4
@@ -159,17 +159,17 @@ https://user-images.githubusercontent.com/69238937/179927824-5a264eb9-39b0-4d62-
     darknet_viedo_flask.py :
     ```P
     ★ def parser(): in --weights, --config_file, --data_file
-    You need to modify it yourself according to the classification structure, training weight, etc. you use, because you need to identify the classification structure, which must be changed; the current experiment basically uses the weight of the 0507 folder.
+    # You need to modify it yourself according to the classification structure, training weight, etc. you use, because you need to identify the classification structure, which must be changed; the current experiment basically uses the weight of the 0507 folder.
     ★ cap = cv2.VideoCapture(input_path)
-    The input_path may need to be modified, because the different experimental hardware may cause the problem that the lens may not be read (although there is basically no error~~).
+    # The input_path may need to be modified, because the different experimental hardware may cause the problem that the lens may not be read (although there is basically no error~~).
     ★ detector = HandDetector(detectionCon=0.8, maxHands=2)
-    The main part is to set the threshold value, detectionCon is the confidence of detecting the shot, and maxHands is how many hands can be detected. In this program, maxHands must be set to 2, because the left and right hands will be used at the same time.
+    # The main part is to set the threshold value, detectionCon is the confidence of detecting the shot, and maxHands is how many hands can be detected. In this program, maxHands must be set to 2, because the left and right hands will be used at the same time.
     ★ for button in buttonList :
-    This is the threshold setting for function selection. The setting will only be selected within a fixed range. If you want to modify the selection position, you can modify it here.
+    # This is the threshold setting for function selection. The setting will only be selected within a fixed range. If you want to modify the selection position, you can modify it here.
     ★ client_socket.connect(('192.168.186.81', 8485))
-    The IP location needs to be modified according to the current URL during the experiment. Usually, it is modified to the IP of the WIFI sent by the robot. If you don't want to control the robot but just want to test the overall system, you can set it to ('0.0.0.0', 8485) and you can do it Use, if the IP is not modified, it will not be able to execute.
+    # The IP location needs to be modified according to the current URL during the experiment. Usually, it is modified to the IP of the WIFI sent by the robot. If you don't want to control the robot but just want to test the overall system, you can set it to ('0.0.0.0', 8485) and you can do it Use, if the IP is not modified, it will not be able to execute.
     ★ app.run(host="0.0.0.0", port=5000)
-    This is the IP setting of the flask web page, it can be used with basic (0.0.0.0)
+    # This is the IP setting of the flask web page, it can be used with basic (0.0.0.0)
     ```
     robo.py :
     ```P
@@ -179,7 +179,7 @@ https://user-images.githubusercontent.com/69238937/179927824-5a264eb9-39b0-4d62-
     4. ep_chassis.move
     5. ep_arm = ep_robot.robotic_arm
     6. ep_arm.move
-    The above are all instructions for controlling the robot. They are currently annotated in the program. If you want to control the robot, you must unpack these programs and annotate the robot to move. The annotations are only for convenience. You can test without controlling the robot. Whether the entire system can be executed. https://github.com/dji-sdk/RoboMaster-SDK/tree/master/examplesThe above URL is the official SDK for controlling the robot . 
+    # The above are all instructions for controlling the robot. They are currently annotated in the program. If you want to control the robot, you must unpack these programs and annotate the robot to move. The annotations are only for convenience. You can test without controlling the robot. Whether the entire system can be executed. https://github.com/dji-sdk/RoboMaster-SDK/tree/master/examplesThe above URL is the official SDK for controlling the robot . 
     ```
 https://user-images.githubusercontent.com/69238937/179931888-6d25d5ed-9d4f-4f8f-8b08-2f626b43d375.mp4
 
