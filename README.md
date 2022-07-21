@@ -27,7 +27,7 @@ This research mainly uses [MediaPipe](https://google.github.io/mediapipe/),an op
   * <https://medium.com/python4u/%E7%94%A8conda%E5%BB%BA%E7%AB%8B%E5%8F%8A%E7%AE%A1%E7%90%86python%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-b61fd2a76566>
   * <https://ithelp.ithome.com.tw/articles/10218768>
 
-* Darknet environment
+* Darknet Environment
 
   The darknet environment is set up according to AlexeyAB's set-up steps , The part of needism is that the following settings need to be turned on and set to 1 during construction , Mainly in the setting parameter of **LIBSO = 0** in the darknet Makefile, if it is not turned on, it will not be able to execute the subsequent programs smoothly
 
@@ -64,7 +64,7 @@ This research mainly uses [MediaPipe](https://google.github.io/mediapipe/),an op
   
   <img src="https://user-images.githubusercontent.com/69238937/180123269-98319d3d-a0cf-412d-823d-1c6eaa8a6748.jpg" width="500" /><br/>
 
-## Make gesture data
+## Make Gesture Data
 
   If you want to collect and make gesture samples by yourself, use the create_image_opencarmera.py program in do_dataset Folder, you can perform Mediapipe detection on the read images, and then convert them into skeleton samples with a simple black background.
 
